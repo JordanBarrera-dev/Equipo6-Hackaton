@@ -125,7 +125,7 @@ function cargarCarrito(){
                     <h6 class="product_name">
                         <a href="#">${producto.nombre}</a>
                     </h6>
-                    <div class="product_price">$${producto.precio.toFixed(2)}</div>
+                    <div class="product_price">$${producto.precio.toLocaleString('es-CO')}</div>
                 </div>
                 <div class="remove_from_cart_button" onclick="eliminarDelCarrito('${producto.nombre}')">
                     <span>Remove</span>
