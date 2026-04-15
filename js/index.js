@@ -95,7 +95,7 @@ function cargarStock(){
                     <h6 class="product_name">
                         <a href="#">${producto.nombre}</a>
                     </h6>
-                    <div class="product_price">$${producto.precio.toFixed(2)}</div>
+                    <div class="product_price">${Number(producto.precio).toLocaleString('es-CO', {style: 'currency', currency: 'COP', minimumFractionDigits: 0 })}</div>
                 </div>
                 <div class="red_button add_to_cart_button" onclick="agregarCarrito('${producto.nombre}')">
                     <span>add to cart</span>
