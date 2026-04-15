@@ -46,6 +46,10 @@ COLOR PALETTE
 2. Body and some general stuff
 *********************************/
 
+:root {
+	--primary-color: #478e00;
+}
+
 *
 {
 	margin: 0;
@@ -536,9 +540,13 @@ section
 
 .main_nav_container
 {
+	position: sticky;
+	top: 0;
+	left: 0;
 	width: 100%;
 	background: #FFFFFF;
 	box-shadow: 0 0 16px rgba(0, 0, 0, 0.15);
+	z-index: 9;
 }
 .navbar
 {
@@ -624,7 +632,7 @@ section
 	width: 20px;
 	height: 20px;
 	border-radius: 50%;
-	background: #fe4c50;
+	background: var(--primary-color);
 	font-size: 12px;
 	color: #FFFFFF;
 }
@@ -812,7 +820,7 @@ section
 }
 .logo_container a span
 {
-	color: #fe4c50;
+	color: var(--primary-color);
 }
 
 /*********************************
@@ -826,7 +834,7 @@ section
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
-	margin-top: 150px;
+	margin-top: 0;
 }
 .main_slider_content
 {
@@ -834,13 +842,15 @@ section
 }
 .main_slider_content h6
 {
-	font-weight: 500;
+	color: #FFFFFF;
+	font-weight: 700;
 	text-transform: uppercase;
 	margin-bottom: 29px;
 }
 .main_slider_content h1
 {
-	font-weight: 400;
+	color: #FFFFFF;
+	font-weight: 600;
 	line-height: 1;
 }
 .red_button
@@ -853,9 +863,9 @@ section
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	width: auto;
+	width: fit-content;
 	height: 40px;
-	background: #fe4c50;
+	background: var(--primary-color);
 	border-radius: 3px;
 	-webkit-transition: all 0.3s ease;
 	-moz-transition: all 0.3s ease;
@@ -865,7 +875,7 @@ section
 }
 .red_button:hover
 {
-	background: #FE7C7F !important;
+	background: #ffbfc0 !important;
 }
 .red_button a
 {
@@ -988,12 +998,12 @@ section
 }
 .grid_sorting_button.active:hover
 {
-	background: #FE7C7F !important;
+	background: var(--primary-color) !important;
 }
 .grid_sorting_button.active
 {
 	color: #FFFFFF;
-	background: #fe4c50;
+	background: var(--primary-color);
 }
 
 /*********************************
@@ -1074,7 +1084,7 @@ section
 .product_price
 {
 	font-size: 16px;
-	color: #fe4c50;
+	color: var(--primary-color);
 	font-weight: 600;
 }
 .product_price span
@@ -1124,7 +1134,7 @@ section
 }
 .product_bubble_red::after
 {
-	border-color: transparent transparent transparent #fe4c50;
+	border-color: transparent transparent transparent var(--primary-color);
 }
 .product_bubble_left::after
 {
@@ -1132,7 +1142,7 @@ section
 }
 .product_bubble_red
 {
-	background: #fe4c50;
+	background: var(--primary-color);
 }
 .product_bubble_green
 {
@@ -1196,7 +1206,7 @@ section
 {
 	font-family: 'FontAwesome';
 	content:'\f004';
-	color: #fe4c50;
+	color: var(--primary-color);
 }
 .favorite::after
 {
@@ -1205,7 +1215,7 @@ section
 }
 .favorite:hover::after
 {
-	color: #fe4c50;
+	color: var(--primary-color);
 }
 
 /*********************************
@@ -1252,7 +1262,7 @@ section
 	transform: translateX(-50%);
 	width: 60px;
 	height: 5px;
-	background: #fe4c50;
+	background: var(--primary-color);
 	content: '';
 }
 .timer
@@ -1276,7 +1286,7 @@ section
 {
 	font-size: 48px;
 	font-weight: 600;
-	color: #fe4c50;
+	color: var(--primary-color);
 	margin-top: 10px;
 }
 .timer_unit
@@ -1414,7 +1424,7 @@ section
 .benefit_icon i
 {
 	font-size: 30px;
-	color: #fe4c50;
+	color: var(--primary-color);
 }
 .benefit_content
 {
@@ -1515,8 +1525,8 @@ section
 	font-size: 14px;
 	line-height: 16px;
 	font-weight: 500;
-	color: #fe4c50;
-	border-bottom: solid 1px #fe4c50;
+	color: var(--primary-color);
+	border-bottom: solid 1px var(--primary-color);
 	margin-top: 12px;
 }
 .blog_more:hover
@@ -1605,7 +1615,7 @@ section
 	width: 160px;
 	height: 46px;
 	border: none;
-	background: #fe4c50;
+	background: var(--primary-color);
 	color: #FFFFFF;
 	font-size: 14px;
 	font-weight: 500;
@@ -1651,7 +1661,7 @@ section
 }
 .footer_nav li a:hover, .cr a, .cr i
 {
-	color: #fe4c50;
+	color: var(--primary-color);
 }
 .footer_social
 {
@@ -1682,5 +1692,9 @@ section
 }
 .footer_social ul li a:hover
 {
-	color: #fe4c50;
+	color: var(--primary-color);
+}
+
+li, a {
+	border-radius: 1rem!important;
 }
