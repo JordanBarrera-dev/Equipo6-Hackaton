@@ -3,9 +3,10 @@
   const closeBtn = document.getElementById("closeCart");
 
   // Abrir modal
-  openBtn.onclick = () => {
+openBtn.onclick = () => {
+    cargarCarrito(); // 🔥 ahora sí
     modal.style.display = "block";
-  };
+};
 
   // Cerrar con X
   closeBtn.onclick = () => {
